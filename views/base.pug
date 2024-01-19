@@ -1,0 +1,101 @@
+doctype html 
+html  
+  head
+    title All ABOUT ME 
+    
+    block style    
+    
+  body
+    div.container
+      div.item1 
+       ul 
+           li.l1  
+             a(href="https://instagram.com/nishant_weeb?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==")
+               i.fa.fa-instagram
+           li.l2 
+             a(href="https://www.facebook.com/nishant.khorwal.3?mibextid=ZbWKwL")
+               i.fa.fa-facebook
+           li.l2 
+             a(href="https://instagram.com/nishant_weeb?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==")
+               i.fa.fa-linkedin 
+           li.l2 
+             a(href="https://instagram.com/nishant_weeb?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==")
+               i.fa.fa-twitter 
+      h1.item2 All About Me
+      div.item3 
+        input(class="search" type='text' placeholder='Search..')
+        i.fa.fa-search
+    div.line4     
+    nav.navbar 
+         div.dropdown
+           div.select 
+             span.selected #[a(href='/') Home]
+             
+         div.dropdown
+           div.select 
+               span.selected(onclick="toggleMenu(),rotate()") Categories
+               i.fa.fa-angle-down(id="ang",onclick="rotate(),toggleMenu()")
+           ul.menu#submenu
+             li  Lifestyle 
+             li  Family    
+             li  Health 
+             li  Management
+         div.dropdown
+           div.select 
+               span.selected #[a(href='#blog') Blogs]
+               
+         div.dropdown
+           div.select 
+               span.selected #[a(href='/') Style]
+               
+         div.dropdown
+           div.select 
+               span.selected #[a(href='/about') About]
+               
+         div.dropdown
+           div.select 
+               span.selected #[a(href='#Contact') Contact]
+                                      
+
+    block content          
+    footer.start#Contact 
+      div.container3 
+         div.foot-item1 
+           h2 Quick Links
+           div.line  
+           ul 
+             li #[a(href='/') Home] 
+             li #[a(href='/about') About] 
+             li #[a(href='/') Contact]                          
+         div.foot-item2
+           h2 Socials 
+           div.line2 
+           ul 
+             li
+               a(href="https://instagram.com/nishant_weeb?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==")
+                 | Instagram
+             li 
+               a(href="https://www.facebook.com/nishant.khorwal.3?mibextid=ZbWKwL")
+                 | Facebook
+             li 
+               a(href="https://instagram.com/nishant_weeb?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==")
+                 | Linkedin 
+             li 
+               a(href="https://instagram.com/nishant_weeb?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==")
+                 | Twitter 
+         div.contactus
+            h2 Contact Us
+            div.line3
+            div.card 
+             form(action="/" , method= "post",class="myform" ,id="Contact") 
+                input(type="text",class="myinput",name="Name",placeholder="Enter Your Name..")
+                input(type="text",class="myinput2",name="email",placeholder="Enter Your Email id..")
+                input(type="text",class="myinput2 myinput3",name="concern",placeholder="Enter Your Concern..")  
+                button(class="btn")
+                 | Submit        
+    footer.last
+     ul 
+      i.fa.fa-copyright 
+      li.l1 Copyright 
+      li All About Me 2023 
+  block scripts          
